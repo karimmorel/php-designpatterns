@@ -21,40 +21,40 @@
 
  // Here, we create an originator, and everytime we change his name, we create a new state of it (a new Memento) and we store it in the Caretaker
 
- $originator = new Originator('Dragon');
+ $originator = new Originator('Henry');
  $history = new Caretaker;
  $state = $originator->createState();
  $history->push($state);
 
- $originator->setName('yes');
+ $originator->setName('Vanessa');
  $state = $originator->createState();
  $history->push($state);
 
- $originator->setName('no');
+ $originator->setName('José');
  $state = $originator->createState();
  $history->push($state);
 
- $originator->setName('oui');
+ $originator->setName('Louis');
  $state = $originator->createState();
  $history->push($state);
 
- $originator->setName('yo');
+ $originator->setName('Manon');
  $state = $originator->createState();
  $history->push($state);
 
  // With the Caretaker we go some states earlier
 
 $lastState = $history->pop();
-var_dump($lastState->getName());
+echo $lastState->getName().'<br/>';
 
 $lastState = $history->pop();
-var_dump($lastState->getName());
+echo $lastState->getName().'<br/>';
 
 $lastState = $history->pop();
-var_dump($lastState->getName());
+echo $lastState->getName().'<br/>';
 
 // And then we restore this state to our originator
 
-var_dump($originator->getName());
+echo $originator->getName().'<br/>';
 $originator->restore($lastState);
-var_dump($originator->getName());
+echo $originator->getName().'<br/>';
