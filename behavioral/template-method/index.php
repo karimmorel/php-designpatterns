@@ -11,7 +11,6 @@
  Include 'AbstractClass.php';
  Include 'ConcreteClass.php';
 
- Use Designpatterns\Behavioral\Templatemethod\AbstractClass;
  Use Designpatterns\Behavioral\Templatemethod\ConcreteClass;
 
  $object = new ConcreteClass();
