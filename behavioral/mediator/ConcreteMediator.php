@@ -22,12 +22,10 @@ class ConcreteMediator extends Mediator {
     {
         if($colleague instanceof ConcreteColleague)
         {
-            echo 'Concrete Colleague Changed;<br/>';
             $this->otherColleague->colleagueChanged();
         }
         else if($colleague instanceof OtherConcreteColleague)
         {
-            echo 'Other Concrete Colleague Changed;<br/>';
             $this->colleague->colleagueChanged();
         }
     }
