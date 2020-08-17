@@ -15,7 +15,7 @@ class OtherConcreteColleague implements Colleague {
 
     public function change()
     {
-        echo 'Concrete colleague changed.';
+        echo 'Other Concrete colleague changed.<br/>';
         $this->mediator->update($this);
     }
 
