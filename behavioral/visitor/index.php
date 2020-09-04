@@ -1,6 +1,6 @@
 <?php
 
-// The Visitor Design Pattern allows us to add some more behaviours to an object without having to modify it's class
+// The Visitor Design Pattern allows us to separate an algorithm from the object it actually operates on
 
 /**
  * For this structure, we need 3 elements :
