@@ -1,1 +1,1 @@
-The Structural Design Patterns are defining the relationships between objects
+The Structural Design Patterns are designing how they are assembled while keeping these structures maintainable and extensible

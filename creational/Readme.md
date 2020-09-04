@@ -1,1 +1,1 @@
-Creational Design Pattern defines how to create an object
+Creational Design Pattern defines how objects are created

@@ -1,1 +1,1 @@
-Behavioral Design Patterns are defining how the objects interact and communicate between them
+Behavioral Design Patterns are designing object's algorithms and the interactions between these algorithms, they defines how objects interacts and communicates
